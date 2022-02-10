@@ -1,0 +1,51 @@
+include utils.pug
+doctype html
+html
+  head
+      block head
+        title="Screaming Cinemas "
+        link(rel='stylesheet' href='/stylesheets/reset.css')
+        link(rel='stylesheet' href='/stylesheets/layout.css')
+
+  body(class='bodycontainer')
+
+    div(class='header')
+      div(class='logout')
+        if locals.authenticated
+          p= `Welcome ${user.firstname}`
+          form(class='logout-form' action='/user/logout' method='post')
+              button(class='logout-button') Logout
+      if locals.authenticated
+        a(href='/' class='text') Home
+        a(href='/movies' class='text') Movie Morgue
+        a(href='/user/watchlist' class='text') My Movie Graveyard
+        div(class='search')
+            form(action='/search' class='search-input' method='post')
+              input(type='hidden' name='_csrf' value=csrfToken)
+              label(for='search')
+              input(type='text' name='search' class='sb1')
+              button(class='search_btn logout-button' type='submit') Search
+      else
+        a(href='/' class='text') Home
+        a(href='/user/login' class='text') Login
+        a(href='/movies' class='text') Movie Morgue
+        div(class='search')
+            form(action='/search' class='search-input' method='post')
+              input(type='hidden' name='_csrf' value=csrfToken)
+              label(for='search')
+              input(type='text' name='search' class='sb1')
+              button(class='search_btn logout-button' type='submit') Search
+
+    block content
+
+  div
+    footer(class='footer')
+      p(class='cemetarians') Cemetarians
+      div(class='james author')
+        p: a(href='https://github.com/JamesRR91') James Roberts
+      div(class='sean author')
+        p: a(href='https://github.com/span9692') Sean Pan
+      div(class='tony author')
+        p: a(href='https://github.com/hauck29') Tony Hauck
+      div(class='zachery author')
+        p: a(href='https://github.com/zestefano') Zachery Estefano

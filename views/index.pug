@@ -1,0 +1,19 @@
+extends layout
+
+append head
+  //- add page specific styles by appending to the head
+  link(rel="stylesheet" href="/stylesheets/index.css")
+  //- add page specific js
+  script(src="/javascripts/index.js" type="module" defer)
+
+block content
+  h1(class='landing-h1')= title
+    h2(class='landing-h2') Your Personal Horror Movie Collection
+    div(class='register-login-buttons')
+      if locals.authenticated
+        a(href='/movies' class='lk1 text1') Enter If You Dare...
+      else
+        a(href='/user/register' class='text') Get Started
+    br
+    div(class='mainpicdiv')
+      img(class='mainpic' src='https://news.law.fordham.edu/wp-content/uploads/2017/10/iStock-594448326.jpg' width='800px')

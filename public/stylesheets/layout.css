@@ -1,0 +1,218 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    color: red;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.btn1 {
+    border-radius: 25px;
+    background-color: grey;
+}
+a {
+    color: red;
+  }
+
+  .header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      /* justify-content: flex-end; */
+  }
+
+.sb1 {
+    border-radius: 25px;
+    background-color: maroon;
+    color: white;
+}
+.search-input {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+h1 {
+    color: #555555
+}
+
+.text {
+    font-size: 20px
+}
+
+.text1 {
+    font-size: 25px
+}
+
+.reviewtext {
+    font-size: 20px
+}
+
+.lk1 {
+    border-radius: 25%;
+    background-color: #3b1010;
+}
+
+.register-p{
+    display: flex;
+    justify-content: center;
+}
+.register-form {
+    display: flex;
+    justify-content: center;
+}
+.movie-lib-div, .movie-graveyard-div {
+    display: flex;
+    justify-content: center;
+}
+
+.logout-form {
+    display: block;
+}
+
+/* .logout-button {
+    color:white;
+    background-color: black;
+} */
+
+.logout-button {
+    box-shadow: 3px 1px 0px 0px #a83f37;
+	background-color:transparent;
+	border-radius:18px;
+	border:1px solid #ff1100;
+	display:inline-block;
+	cursor:pointer;
+	color:#ff0000;
+	font-family: fantasy;
+	font-size:18px;
+	padding:2px 6px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ab0b00;
+}
+.logout-button:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+.logout-button:active {
+	position:relative;
+	top:1px;
+}
+
+.movie {
+    display: flex;
+    justify-content: center;
+}
+
+.movieinfo {
+    display: flex;
+    justify-content: space-around;
+}
+.author {
+    display: flex;
+}
+
+.authorName {
+    display: block;
+    margin-right: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 10em;
+    position: sticky;
+    bottom: 0vh;
+    width: 100%;
+}
+
+.stock {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.review-box {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+#homepage-image {
+    box-shadow: 0px 0px 10px 10px #070707;
+    border-radius: 10px;
+}
+
+.register-button {
+    margin-bottom: 1px;
+}
+
+tr > #title {
+    padding-left: 70px
+}
+
+tr > #director {
+    padding-left: 70px
+}
+
+tr > #releasedate {
+    padding-left: 60px
+}
+
+tr > #rating {
+    padding-left: 120px
+}
+
+tr > #scarelevel {
+    padding-left: 50px
+}
+
+.bodycontainer {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.logout {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.search_btn {
+    padding: 3px;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+/* .authdiv {
+    display: flex;
+    justify-content: space-evenly;
+} */

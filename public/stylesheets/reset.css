@@ -1,0 +1,74 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, serif;
+  background-color: black;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.alert{
+  color: red;
+}
+a {
+  color: red;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  color: white;
+}
+
+table {
+
+  color: red;
+}
+
+form {
+  color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+/* h1, h2, h3, h4, h5, h6, ol, li, ul, div, span,
+body, header, nav {
+  font-size: 1rem;
+  color: inherit;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-weight: normal;
+} */
+
+h1 {
+  font-size: 3rem;
+  color: red;
+}
+
+.search_bar {
+  display: block;
+}
+
+.search_btn {
+  background-color: black;
+  color: grey
+}
+
+h3 {
+  color: grey
+}
+
+
+ul {
+  color: grey
+}
+
+li {
+  color: grey
+}

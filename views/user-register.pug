@@ -1,0 +1,27 @@
+extends layout.pug
+
+include utils.pug
+
+block content
+  br
+  div(class='register-form')
+    p Here is where you can sign up for a Screaming Cinemas account!
+
+  +validationErrorSummary(errors)
+  form(action='/user/register' method='post')
+    input(type='hidden' name='_csrf' value=csrfToken)
+    +field('First Name', 'firstname', user.firstname)
+    +field('Last Name', 'lastname', user.lastname)
+    +field('Email Address', 'email', user.email)
+    +field('User Name', 'username', user.username)
+    +field('Password', 'password', '', 'password')
+    +field('Confirm Password', 'confirmpassword', '', 'password')
+    button(type='submit' class='btn btn-primary register-button logout-button') Register
+  form(action='/user/login' method='post')
+    input(type='hidden' name='_csrf' value=csrfToken)
+    input(type='hidden' name='email' value='jrr@jrr.com')
+    input(type='hidden' name='password' value='Reaper1!')
+    button(type='submit' class='logout-button') Demo User
+  br
+  div(class='movie')
+    p: a(href='/user/login') Already have an account?
